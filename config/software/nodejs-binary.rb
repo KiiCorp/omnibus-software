@@ -24,7 +24,7 @@
 # easily removed with remove-nodejs.
 #
 name "nodejs-binary"
-default_version "6.7.0"
+default_version "6.10.2"
 
 license "MIT"
 license_file "LICENSE"
@@ -40,6 +40,12 @@ version "6.7.0" do
                 else
                   "abe81b4150917cdbbeebc6c6b85003b80c972d32c8f5dfd2970d32e52a6877af"
                 end
+  source sha256: source_hash
+end
+
+version "6.10.2" do
+  # Support only x64
+  source_hash = "35accd2d9ccac747eff0f236e2843bc2198ba7765e2340441d6230861bae4e1b"
   source sha256: source_hash
 end
 
