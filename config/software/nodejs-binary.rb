@@ -49,6 +49,12 @@ version "6.10.2" do
   source sha256: source_hash
 end
 
+version "6.11.1" do
+  # Support only x64
+  source_hash = "175e00ad504f0dca5a4d2af0f941e27ea0bd3178529fd1a9c3d67f3d75afd864"
+  source sha256: source_hash
+end
+
 arch_ext = if ppc64le?
              "ppc64le"
            elsif ppc64?
