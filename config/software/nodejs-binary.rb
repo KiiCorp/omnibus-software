@@ -55,6 +55,13 @@ version "6.11.1" do
   source sha256: source_hash
 end
 
+version "6.11.5" do
+  # Support only x64
+  # https://nodejs.org/en/blog/release/v6.11.5/
+  source_hash = "fffd25c9e9b6d2235e97ba8be1dd6ea5f31e32ea445c5cc704ca84ef44db66c1"
+  source sha256: source_hash
+end
+
 arch_ext = if ppc64le?
              "ppc64le"
            elsif ppc64?
